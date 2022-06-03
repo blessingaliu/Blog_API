@@ -24,22 +24,26 @@ mysql --version
 brew services start mysql
 brew services stop mysql
 
-### Log in as root 
-mysql -u root
-
-### Change your root password after installation:
-mysqladmin -u root password [newpassword]
-
 ### Log in as root using password
-mysql -u root -p
+sudo mysql -u root -p
 
 ### Create a new user in mysql>
-CREATE USER 'xyz'@'localhost' IDENTIFIED BY 'password';
+CREATE USER 'blessing'@'localhost' IDENTIFIED BY 'blessing';
 
 ### Grant user all privileges in mysql>
-GRANT ALL PRIVILEGES ON *.* TO 'xyz'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'blessing'@'localhost' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES;
+
+SHOW GRANTS FOR 'username'@'host';
+
+### After creating your MySQL user and granting them privileges, you can exit the MySQL client:
+exit 
+
+### In the future, to log in as your new MySQL user, you’d use a command like the following:
+mysql -u blessing -p
+
+
 
 ### Create and Select Database
 CREATE DATABASE blog_api;
