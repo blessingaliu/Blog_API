@@ -19,3 +19,16 @@ pip install -r requirements.txt
 ### Check mySQL Version
 mysql --version
 
+
+<!-- If you installed MySQL through Homebrew, you can start and stop it using the commands: -->
+brew services start mysql
+brew services stop mysql
+
+### Log in as root 
+mysql -u root
+
+### Change your root password after installation:
+mysqladmin -u root password [newpassword]
+
+### Log in as root using password
+mysql -u root -p
