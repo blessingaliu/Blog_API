@@ -1,6 +1,6 @@
 ## Project Setup
 
-mkdir blog-api 
+mkdir blog-api
 cd blog-api
 
 ### Create and activate virtual environment 
