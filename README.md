@@ -1,8 +1,8 @@
 ## Create a BlogAPI
-Using FastAPI and mySQL
+Using FastAPI 
 
-mkdir blog_fastapi
-cd blog_fastapi
+mkdir blog_api
+cd blog_api
 
 
 ### Create and activate virtual environment 
@@ -13,4 +13,7 @@ source env/bin/activate
 
 ### Installing dependencies
 pip install -r requirements.txt
+
+### Running the app 
+bash run.sh
 
