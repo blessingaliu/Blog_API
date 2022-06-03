@@ -32,3 +32,15 @@ mysqladmin -u root password [newpassword]
 
 ### Log in as root using password
 mysql -u root -p
+
+### Create a new user in mysql>
+CREATE USER 'xyz'@'localhost' IDENTIFIED BY 'password';
+
+### Grant user all privileges in mysql>
+GRANT ALL PRIVILEGES ON *.* TO 'xyz'@'localhost' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+### Create and Select Database
+CREATE DATABASE blog_api;
+USE blog_api;
